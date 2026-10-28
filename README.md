@@ -8,7 +8,7 @@ New AI-assisted portfolio teaching material, created October 2026. Not employer 
 
 ## Run
 
-Requires a .NET SDK capable of targeting .NET 8, and the .NET 8 runtime. Tests use xUnit v3 4.0.2 from NuGet.
+Requires the .NET 10 SDK (LTS). Tests use xUnit v3 4.0.2 from NuGet. The SDK includes the required .NET 10 runtime.
 
 ```sh
 dotnet run --project ExecutionLab.Tests/ExecutionLab.Tests.csproj --configuration Release
@@ -35,4 +35,9 @@ No benchmark, p99 latency, "zero incidents", CME conformance or production-readi
 
 ## Publication
 
-Owner approved this new public repository. Release 0.1.0 is source-only. The CI badge links to actual workflow results, not an assertion of production correctness. Local Windows validation ran all 24 xUnit cases successfully on .NET 8.0.33 (built with SDK 9.0.300); the workflow independently runs on Ubuntu and Windows with SDK 8. Existing JavaScript portfolio examples remain separately labelled educational material. A passed suite validates only the fixtures and documented assumptions above.
+Owner approved this new public repository. Release 0.2.0 is source-only and updates the sample target and both CI platforms to .NET 10 LTS; the order model and 24 test cases are unchanged. This target is not a claim of historical employer usage. The CI badge links to actual workflow results, not an assertion of production correctness. Existing JavaScript portfolio examples remain separately labelled educational material. A passed suite validates only the fixtures and documented assumptions above.
+
+## Release notes
+
+- 0.2.0: target `net10.0`, run CI with SDK 10 on Ubuntu and Windows, retain the same synthetic invariants and exclusions. Local Windows check: SDK 10.0.403 / runtime 10.0.14, all 24 cases passed, zero skips (28 October 2026). Check the release tag's exact-commit workflow for independent platform results; local success alone is not cloud CI evidence.
+- 0.1.0: original .NET 8 teaching sample; retained as an historical source release, not the recommended current target.
