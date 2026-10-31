@@ -2,7 +2,7 @@
 
 [![C# synthetic invariants](https://github.com/pouriaquant91/trading-execution-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/pouriaquant91/trading-execution-lab/actions/workflows/ci.yml)
 
-Portfolio and bilingual reviewer guide: https://pouriajamali.site/work/engineering-evidence/
+Portfolio and reviewer guide: https://pouriajamali.site/work/engineering-evidence/
 
 New AI-assisted portfolio teaching material, created October 2026. Not employer code, a TT adapter, a reconstruction of a private project, or evidence of historic production incidents/performance. All data is synthetic. No SDK, credentials, account data, market data, network calls or order submission.
 
